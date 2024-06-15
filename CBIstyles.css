@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    margin: -100px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-content {
+    text-align: center; /* Center-align content inside center tag */
+}
+
+.box {
+    margin: 15px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px grey;
+    transition: all 0.5s ease;
+}
+
+.box:hover {
+    box-shadow: 0px 0px 35px #4d4d4dff;
+}
+
+#textInput {
+    background-color: white;
+    height: 25px;
+    width: 170px;
+    transition: width 0.25s ease, box-shadow 0.4s ease;
+    margin-top: 15px;
+    text-align: center;
+}
+#textInput:hover {
+    width: 180px;
+    box-shadow: 0px 5px 30px rgb(94, 94, 94);
+}
+
+#textInput:focus {
+    box-shadow: 0px 15px 60px rgb(34, 34, 34);
+    width: 195px;
+}
+
+#textInput::placeholder {
+    color: #00000050;
+}
+
+.volume-control {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.volume-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.volume-control input[type="range"] {
+    width: 200px;
+}
